@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/invoice.css">
+    <title>Document</title>
+</head>
+<body>
+
+
+    
+
+
+
+    <div class="row row1">
+        <div class="col-8">
+            <img src="/logo.png" class="logo" alt="image couldnt load"/>
+        </div>
+        <div class="col-3 address">
+            <div class="head1">Register Office</div>
+            <div class="head2">Wokestech Private Limited</div>
+            <p class="para">H.NO.2-108/43, 2nd Floor, Vijaya Lakshmi <br/>
+             Enclave, ICRISAT Colony, PJR Road, Gangaram,<br/>
+            Hyderabad, Telangana, India-500050<br/>
+            040-49024923, +91 9584360007</p>
+        </div>
+    </div>
+
+
+    <div class="row row2">
+        <div class="col-2 tax">TAX INVOICE</div>
+       
+    </div>
+
+
+    <div class="row row3">
+        <div class="col-9">
+            <table class="table table-bordered">
+                <thead>
+                  <tr>
+                    <th>FROM</th>
+                    <th></th>
+                    <th>BILLED TO</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                        <h5>Wokestech Private Limited</h5>
+                     H.No, 2-108/43, 2nd floor, Vijaya Lakshmi Enclave,
+                     ICRISAT Colony, PJR Road, Gangaram, Hyderabad-500050
+                     Ph: +91-9584360007
+
+                    </td>
+                    <td></td>
+
+                    <td>
+                        <h5>ES Search Consultants, INC 2201 Spinks Road,</h5>
+                        Suit#264, Flower Mound, Texas - 75022
+                        +001 214-998-0113
+
+                    </td>
+                  </tr>
+                 
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+
+    <div class="row row4">
+        <div class="col-9">
+            <table class="table table-bordered">
+                <thead>
+                  <tr>
+                    <th>PAN No.:</th>
+                    <th>GSTN No.:</th>
+                    <th>SAC/HSN No.:</th>
+                    <th>INV. No. <%= INV_NO %></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                        <%= PAN_NO %>
+
+                    </td>
+                    <td><%= GSTN_NO %></td>
+
+                    <td>
+                        <%= SAC_NO %>
+                    </td>
+
+                    <td>
+                        <%= INV_DATE %>
+                    </td>
+                  </tr>
+                 
+                </tbody>
+              </table>
+        </div>
+    </div>
+
+
+
+    <div class="row row5">
+        <div class="col-9">
+            <table class="table table-bordered">
+                <thead>
+                  <tr>
+                    <th>S. No</th>
+                    <th>Details</th>
+                    <th>Month</th>
+                    <th>Hours</th>
+                    <th>Rate ($)</th>
+                    <th>Amount
+                        (USD)</th>
+                  </tr>
+                </thead>
+
+                <tbody>
+                  <tr>
+                    <td>
+                        1
+                    </td>
+                    <td><%= DETAILS %> – <%= NAME %></td>
+
+                    <td>
+                        <%=MONTH %>-<%=DATE %>
+                    </td>
+
+                    <td>
+                        <%= HOURS %>
+                    </td>
+
+                    <td>
+                        <%= RATE %>
+                    </td>
+
+                    <td>
+                        <%= AMOUNT %>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                        
+                    </td>
+                    <td></td>
+
+                    <td>
+                        
+                    </td>
+
+                    <td>
+                        
+                    </td>
+
+                    <td>
+                        
+                    </td>
+
+                    <td>
+                        
+                    </td>
+                  </tr>
+
+
+                  <tr>
+                    <td>
+
+                    </td>
+
+                    <td>
+                        
+                    </td>
+
+                    <td>
+                        
+                    </td>
+
+                    <td>
+                        CGST
+                        
+                    </td>
+
+                    <td>
+                        <%= CGST_RATE %>
+                        
+                    </td>
+                    <td>
+                        <%= CGST_AMOUNT %>
+                        
+                    </td>
+                  </tr>
+
+
+                  <tr>
+                    <td>
+
+                    </td>
+
+                    <td>
+                        
+                    </td>
+
+                    <td>
+                        
+                    </td>
+
+                    <td>
+                        SGST
+                        
+                    </td>
+
+                    <td>
+                        <%= SGST_RATE %>
+                        
+                    </td>
+                    <td>
+                        <%= SGST_AMOUNT %>
+                        
+                    </td>
+                  </tr>
+
+
+                  <tr>
+                    <td>
+
+                    </td>
+
+                    <td>
+                        
+                    </td>
+
+                    <td>
+                        
+                    </td>
+
+                    <td>
+                        IGST
+                        
+                    </td>
+
+                    <td>
+                        <%=IGST_RATE %>
+                        
+                    </td>
+                    <td>
+                        <%=IGST_AMOUNT %>
+                        
+                    </td>
+                  </tr>
+
+
+
+                  <tr class="lastrow table-borderless ">
+                    <td colspan="4">
+                        Amount in words: US Dollars <%= words %>
+
+                    </td>
+
+                   
+
+                    <td>
+                        <h6>GRAND TOTAL</h6>
+                        
+                    </td>
+                    <td>
+                        <h6><%=GRAND_TOTAL %></h6>
+                        
+                    </td>
+                  </tr>
+
+
+                 
+                </tbody>
+              </table>
+        </div>
+    </div>
+
+
+
+    
+    <div class="row row6">
+        <div class="col-9">
+            <table class="" style="width:100%">
+
+                <thead>
+                    <tr>
+                        <th>BANK DETAILS</th>
+                        <th></th>
+                    </tr>
+
+                </thead>
+
+               <tbody>
+               
+                <tr>
+                    <th>Payable to:</th>
+                    <td>Wokestech Private limited</td>
+                </tr>
+
+                <tr>
+                    <th>Beneficiary Bank:</th>
+                    <td>ICICI BANK </td>
+                </tr>
+                
+                <tr>
+                    <th>SWIFT:</th>
+                    <td>ICICINBBCTS</td>
+                    
+                </tr>
+
+
+                <tr>
+                    <th>Beneficiary Name:</th>
+                    <td>WOKESTECH PRIVATE LIMITED </td>
+                </tr>
+
+                <tr>
+                    <th>Beneficiary Account No :</th>
+                    <td>058805006878 </td>
+                </tr>
+
+                <tr>
+                    <th>IFSC:</th>
+                    <td>ICIC0000588</td>
+                </tr>
+
+                <tr>
+                    <th>MICR CODE:</th>
+                    <td>500229023</td>
+                </tr>
+
+                
+
+
+                <tr>
+                    <th>Remarks: The Invoice is sent under LUT without payment of IGST</th>
+                    <td>
+                        <div class="box">
+                        <div>(DWARASILA MAHENDRA REDDY)</div>
+                        <img src="/signature.jpg" alt="image couldn't load" />
+                        <div>Authorized Signatory</div>
+                    </div>
+                    </td>
+                </tr>
+               </tbody>
+
+              </table>
+        </div>
+    </div>
+
+
+    <div class="row row7">
+        <div class="col-3 website"><span><i class="fa fa-globe" aria-hidden="true"></i></span>www.wokestech.com</div>
+        <div class="col-3 email"><span><i class="fa fa-envelope-o" aria-hidden="true"></i></span>info@wokestech.com</div>
+    </div>
+
+
+
+</body>
+</html>

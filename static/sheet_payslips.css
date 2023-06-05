@@ -1,0 +1,20 @@
+label{
+    font-weight: bold;
+    font-size:17px;
+}
+
+.box1
+{
+    margin-top:100px;
+    margin-left:450px;
+    padding:20px;
+}
+
+input{
+    margin-bottom:10px;
+}
+
+.submit
+{
+    margin-left:190px;
+}

@@ -1,0 +1,146 @@
+
+.logo
+{
+    margin-left:27px;
+    margin-top:15px;
+      
+}
+
+.para
+{
+    font-size:11px;
+    font-weight:bold;
+    margin-top:2px;
+    
+}
+
+.head1
+{
+    font-weight: bold;
+    font-size:13px;
+    margin-top:4px;
+
+}
+
+.head2
+{
+    font-weight: bold;
+    font-size:14px;
+    color:#e74c3c;
+    
+}
+
+.row1
+{
+    border-bottom:2px solid #e74c3c;
+  
+}
+
+.address
+{
+    border-left:2px solid  #e74c3c;
+    
+
+}
+
+.tax
+{
+    margin-left:650px;
+    font-weight: bold;
+    font-size:26px;
+    background-color: #bdc3c7;
+
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+.row3 td{
+    width:190px;
+}
+
+.row3 th{
+    background-color:#bdc3c7;
+    font-size:19px;
+}
+
+.row3 table{
+    margin-left:110px;
+}
+
+.row4 table{
+    margin-left:110px;
+    
+}
+
+.row4 td,.row4 th{
+    background-color:#bdc3c7;
+}
+
+.row5 table{
+    margin-left:110px;
+    
+}
+
+
+
+
+
+
+
+.row6 table{
+    margin-left:110px;
+    border:1px solid black;
+    
+}
+
+
+
+.row6 tr,.row6 td{
+    border:1px solid black;
+}
+.row6  td{
+    padding-left:10px;
+}
+
+.row6 th{
+    width:4%;
+    padding-left:10px;
+}
+
+.box
+{
+    text-align: right;
+}
+
+
+
+
+
+.row7
+{
+    border-top:2px solid #e74c3c;
+    margin-top:90px;
+}
+
+.website
+{
+    margin-left:100px;
+    font-weight:bold;
+    margin-top:20px;
+    font-size:20px;
+
+}
+
+.email
+{
+    margin-left:300px;
+    font-weight:bold;
+    margin-top:20px;
+    font-size:20px;
+
+}
+
+i{
+    margin-right:6px;
+    font-size:40px;
+}

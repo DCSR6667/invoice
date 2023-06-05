@@ -1,0 +1,44 @@
+span{
+    font-weight: bold;
+    font-size:20px;
+    margin-right:10px;
+}
+
+a:hover
+{
+    text-decoration: none;
+    
+}
+
+.box1
+{
+    margin-left:400px;
+    
+    padding-top:10px;
+    padding-left:17px;
+    padding-right:20px;
+    padding-bottom:12px;
+    
+}
+
+.box2
+{
+    margin-left:20px;
+    padding-top:10px;
+    padding-left:17px;
+    padding-right:20px;
+    padding-bottom:12px;
+    
+}
+
+.box{
+
+    margin-top:100px;
+    
+}
+
+.item
+{
+    margin-top:6px;
+    
+}

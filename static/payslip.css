@@ -1,0 +1,57 @@
+.row1
+{
+    margin-top:3px;
+    
+}
+
+.box
+{
+    border:1px solid black;
+    margin-top:20px;
+}
+
+.group1
+{
+    text-align:center;
+    margin-top:-20px;
+    margin-left:330px;
+}
+
+.group2
+{
+    font-size:12px;
+    
+}
+
+.heading
+{
+    font-weight:bold;
+    font-size:18px;
+    
+}
+
+.title
+{
+    margin-left:343px;
+    margin-top:5px;
+}
+
+.table1,.table2
+{
+    border:1px solid black;
+}
+
+
+.table3,.table4
+{
+    border:1px solid black;
+}
+
+.row5 td,th{
+    padding-left:10px;
+}
+
+.row4 td,th{
+    padding-left:10px;
+}
+
