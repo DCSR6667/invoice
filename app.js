@@ -246,7 +246,7 @@ app.post('/sheet_payslips_submit',(req,res,next)=>
 
 
     
-    res.redirect('/generate_payslips/'+JSON.stringify(data));
+    res.redirect('/generate_payslips/'+encodeURIComponent(JSON.stringify(data)));
   
     
     
