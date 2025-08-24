@@ -115,7 +115,7 @@ app.post('/sheet_invoices_submit',(req,res,next)=>
    
 
 
- res.redirect('/generate_invoices/'+JSON.stringify(data)); 
+ res.redirect('/generate_invoices/'+encodeURIComponent(JSON.stringify(data))); 
 
 
 });
