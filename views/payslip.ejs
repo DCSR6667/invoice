@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/payslip.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+    <div class="container box">
+
+        <div class="row row1">
+            <div class="col-4">
+                <img src="/logo.png" alt="image couldnt load"/>
+            </div>
+        </div>
+
+        <div class="row row2">
+            <div class="col-4 group1">
+                <span class="heading">WOKESTECH PRIVATE LIMITED</span>
+                <div class="group2">
+                    <span>H.No. 2-108/43, 2nd FLOOR VIJAYA LAKSHMI ENCLAVE </span><br/>
+                    <span>ICRISAT COLONY PJR ROAD GANGARAM </span><br/>
+                    <span>HYDERABAD-500050</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="row row3">
+            <div class="col-4 title">
+                Payslip for the month of <%= Month+" "+ Year %> 
+            </div>
+        </div>
+
+
+        <div class="row row4">
+            <div class="col-6 table1" style="padding-left:0px;padding-right:0px;">
+                <table>
+                    <tr>
+                        <td>Name:</td>
+                        <td><%=Name %></td>
+                    </tr>
+                    <tr>
+                        <td>Designation:</td>
+                        <td><%=Designation %></td>
+                    </tr>
+                    <tr>
+
+                        <td>Department:</td>
+                        <td><%=Department %></td>
+                    </tr>
+                    <tr>
+                        <td>Location:</td>
+                        <td><%=Location %></td>
+                    </tr>
+                    <tr>
+                        <td>Effective Work Days:</td>
+                        <td><%=Effective_Work_Days %></td>
+                    </tr>
+                    <tr>
+                        <td>Days In Month:</td>
+                        <td><%= Days_In_Month %></td>
+                    </tr>
+                </table>
+            
+            </div>
+            <div class="col-6 table2" style="padding-left:0px;padding-right:0px;">
+                <table>
+
+                    <tr>
+                        <td>Bank Name:</td>
+                        <td><%= Bank_Name %></td>
+                    </tr>
+                    <tr>
+                        <td>Bank Account No.:</td>
+                        <td><%=Bank_Account_No %> </td>
+                    </tr>
+                    <tr>
+                        <td>PF No.:</td>
+                        <td><%=PF_No %></td>
+                    </tr>
+                    <tr>
+                        <td>ESI No.:</td>
+                        <td><%=ESI_No %></td>
+                    </tr>
+                    <tr>
+                        <td>PAN No.:</td>
+                        <td><%= PAN_No %></td>
+                    </tr>
+                    <tr>
+                        <td>LOP:</td>
+                        <td><%= LOP %> </td>
+                    </tr>
+
+                </table>
+            
+            </div>
+        </div>
+
+
+        <div class="row row5">
+            <div class="col-6 table3" style="padding-left:0px;padding-right:0px;">
+                <table style="width:100%;">
+                <tr style="border:1px solid black;">
+                    <th>Earnings</th>
+                    <th>Full</th>
+                    <th>Actual</th>
+                </tr>
+                <tr>
+                    <td>BASIC</td>
+                    <td><%=Basic %></td>
+                    <td><%=Basic %></td>
+                </tr>
+                <tr>
+                    <td>HRA</td>
+                    <td><%=Hra %></td>
+                    <td><%=Hra %></td>
+                </tr>
+                <tr>
+                    <td>CONVEYANCE</td>
+                    <td><%= Conveyance %></td>
+                    <td><%= Conveyance %></td>
+                </tr>
+                <tr>
+                    <td>SPECIAL ALLOWANCE</td>
+                    <td><%=Special_Allowance %></td>
+                    <td><%=Special_Allowance %></td>
+                </tr>
+                <tr style="border:1px solid black;">
+                    <th>Total Earnings: Rs.</th>
+                    <td><%=Total_Salary %></td>
+                    <td><%=Total_Salary %></td>
+                </tr></table>
+            </div>
+
+
+            <div class="col-6 table4" style="padding-left:0px;padding-right:0px;">
+                <table style="width:100%;">
+                    <tr style="border:1px solid black;">
+                        <th>Deductions</th>
+                        <th>Actual</th>
+                    </tr>
+                    <tr>
+                        <td>INCOME TAX</td>
+                        <td><%= Income_Tax %></td>
+                    </tr>
+                    <tr>
+                        <td>PROF TAX</td>
+                        <td><%= Prof_Tax %></td>
+                        
+                    </tr>
+                
+                    <tr>
+                        <td>OTHER DEDUCTION</td>
+                        <td><%= Other_Deduction %></td>   
+                    </tr>
+
+                    <tr style="height:26px;">
+                        <td></td>
+                        <td></td>   
+                    </tr>
+
+                  
+
+                    <tr style="border:1px solid black;">
+                        <th>Total Deductions: Rs.</th>
+                        <td><%= Total_Deductions %></td>
+                    </tr></table>
+            </div>
+        </div>
+
+
+
+        <div class="row row6">
+            <div class="col-7" style="padding-left:0px;padding-right:0px; margin-top:8px;">
+                <div style="padding-left:10px;">
+                    Net Pay for the month (Total Earnings - Total Deductions):<span style="font-weight:bold;margin-left:7px;"><%=Credited_Salary %></span>
+                </div>
+
+                <div style="padding-left:10px;font-style:italic;">
+                    (Rupees <%= words %> )
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div style="text-align: center;margin-top:5px;">
+        This is a system generated payslip and does not require signature.
+    </div>
+
+</body>
+
+</html>
